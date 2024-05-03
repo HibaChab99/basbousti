@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réclamation</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#"> </a>
+        </div>
+        <ul class="menu">
+            <li><a href="index (2).html">Accueil</a></li>
+            <li><a href="apropos011.html">À propos</a></li>
+            <li><a href="contact1.html">Contact</a></li>
+            <li><a href="reservation.html">Réservation</a></li>
+            <li><a href="réclamation.html">Réclamation</a></li>
+        </ul>
+        <a href="reservation.html" class="btn-reservation">Réserver Maintenant</a>
+
+        <div class="responsive-menu"></div>
+    </header>
+    <section id="contact">
+        <div class="container">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="title01"> Faites-nous part de vos réclamations, nous écoutons avec attention!</h1>
+       </div>
+        <h1 class="title">Réclamation</h1>
+        <form action="traitement_reclamation.php" method="post">
+            <div class="left-right">
+                <div class="left">
+                    <label for="nom">Nom Complet</label>
+                    <input type="text" id="nom" name="nom" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="telephone">Numéro</label>
+                    <input type="text" id="telephone" name="telephone" required>
+                </div>
+                <div class="right">
+                    <label for="type_reclamation">Type de réclamation :</label>
+                    <select id="type_reclamation" name="type_reclamation" required>
+                        <option value="">Sélectionnez le type de réclamation</option>
+                        <option value="probleme_organisation">Problème d'organisation</option>
+                        <option value="service_insatisfaisant">Service insatisfaisant</option>
+                        <option value="incident_securite">Incident de sécurité</option>
+                        <!-- Ajoutez d'autres options au besoin -->
+                    </select>
+                    <label for="autres_reclamations">Autres réclamations :</label>
+                    <textarea id="autres_reclamations" name="autres_reclamations" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div>
+                <button type="submit">Envoyer</button> <button type="reset">Annuler</button>
+            </div>
+        </form>
+    </section>
+
+    
+</body>
+<footer>
+    <a href="réclamtion.html"><img src="file:///C:/Users/21646/Desktop/finalfooter.jpg" alt="footer" class="footer-image" ></a>
+</footer>
+</html>
